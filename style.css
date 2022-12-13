@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+} nav{
+    text-align: right;
+} header{
+  background-image: url(./img/Catalogo.jpg);
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  color:  #fff;
+} body{
+  background-color: rebeccapurple;
+
+
+} img{
+    width: 300px;
+    height: 300px;
+} #icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+} .img > img{
+    border-radius: 20px;
+  }
+
+section{
+    background-color:  rgba(0, 0, 0, 0.808);
+
+} nav{
+   padding-top: 2rem;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+} nav li a{
+  padding-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+} .heading-box{
+    margin-top: 10rem;
+    text-align: center;
+} .heading-1{
+    font-size: 35px;
+     font-weight: bold;
+}  .heading-2{
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 25px;
+} .paragraph{
+    margin-top: 10px;
+    font-size: 26px;
+
+}.titulo{
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+} .subtitulo{
+    color: #fff;
+    font-size: 2rem;
+} .content-box-title{
+    max-width: 700px;
+    text-align: center;
+} .titulo-streaming{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+} .subtitulo-streaming{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content{
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.808);
+} .about{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.parceiros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+gap:10px;
+overflow-x: auto;
+margin-top: 2rem;
+}
+
+.parceiros > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}  .titulo-box{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Roboto', sans-serif;
+    font-size: 25px;
+    color:#fff;
+    margin-top:15px;
+} .subtitulo-box{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+} .titulo-breve{
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    font-weight: bold;
+    margin-bottom:2rem;
+} .box-content{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: auto;
+
+}  .title-breve{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+} .titulo-contato{
+    text-align: center;
+    font-size:30px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+} .form{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+} label{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+
+}   #texto{
+    height: 200px;
+    width: 300px;
+} 
+
+
+
+#text:focus, #email, #texto{
+
+    outline: none;
+}  fieldset{
+    border: none;
+} .btn{
+    margin-top: 10px;
+    width: 8rem;
+    height: 3rem;
+     border: none;
+     background-color: rgb(245, 42, 42);
+     color: #fff;
+     cursor: pointer; 
+     margin-bottom: 10px;
+} .btn:hover{
+   background-color: red;
+    transition: 2s;
+}
+
+.rodape-links > li{
+    list-style-type: none;
+} .icon-footer{
+    width: 40px;
+    height: 40px;
+} .footer{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+} .rodape-links{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+} .footer-content{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+span{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+} .parceiros > img:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 0px 0px rgb(234, 34, 234);
+    transition: 0.5s;
+}  [data-anime]{
+    opacity: 0;
+    transition: 2s;
+} [data-anime="down"]{
+    transform: translate3d((0, -100%, 0));
+   } [data-anime="right"]{
+    transform: translate3d(500px,0,0)
+   }[data-anime="left"]{
+    transform: translate3d(-100%, 0,0);
+   } [data-anime="down"]{
+    transform: translate3d(0, -100%,0);
+   } [data-anime="up"]{
+    transform: translate3d(0, 100px,0);
+   }
+   
+   [data-anime].ativo{
+   opacity: 1;
+    transition: 2;
+  transform: translate3d(0,0,0);
+} 
